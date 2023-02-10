@@ -10,7 +10,71 @@
 </head>
 
 <body>
-
+    <div id="container">
+        <aside>
+            <div id="logo-container">
+                <div id="logo">
+                    <img src="logo.png" height="180" width="130">
+                    Odin
+                </div>
+            </div>
+            <div id="aside-footer">
+                <p>
+                    Photo by <a href="https://unsplash.com/@haliewestphoto" id="credit-link">Halie West</a>
+                </p>
+            </div>
+        </aside>
+        <main>
+            <section id="introduction-section">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your
+                    deepest dreams. Sign up <i>now</i> to get started.
+                </p>
+                <p>You <i>know</i> you want to.</p>
+            </section>
+            <section id="form-section">
+                <form method="POST">
+                    <div id="fields-container">
+                        <p id="encouragement">Let's do this!</p>
+                        <fieldset>
+                            <div class="field">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" name="first_name">
+                            </div>
+                            <div class="field">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" name="last_name">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="field">
+                                <label for="phone_number">EMAIL</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="field">
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <input type="number" name="phone_number" min="100000000" max="999999999">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="field">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password">
+                            </div>
+                            <div class="field">
+                                <label for="password_confirmation">CONFIRM PASSWORD</label>
+                                <input type="password" name="password_confirmation">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit" id="create-button">Create Account</button>
+                </form>
+            </section>
+            <section id="links-section">
+                <p>Already have an account? <a href="#" id="login-link">Log in</a> </p>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
